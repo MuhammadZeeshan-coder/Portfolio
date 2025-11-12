@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #1f242d;
 }
@@ -64,10 +69,12 @@ div.holder img{
 }
 /* skill section */
 div.bord{
+    display: flex;
     border: 2px solid black;
     box-shadow: 0 0 30px black;
     width: fit-content;
     height: fit-content;
+    position: relative;
 }
 div.bord div.html{
     border: 5px solid #7cf03d;
