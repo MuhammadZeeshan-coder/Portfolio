@@ -1,0 +1,149 @@
+body{
+    background-color: #1f242d;
+}
+/* navbar */
+div a.logo{
+    font-size: 40px;
+    font-weight: 600;
+}
+span.hov{
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: .5s;
+}
+span.hov:hover{
+    color: #7cf03d;
+}
+/* home page */
+div.main{
+    margin-top: 290px;
+}
+div.main h1{
+    font-size: 55px;
+    font-family: sans-serif;
+    font-weight: 500;
+     color: white;
+}
+div.main h2{
+    font-size: 40px ;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform:capitalize;
+     color: white;
+}
+div.main P{
+    font-size: 25px;
+    font-family: sans-serif;
+     color: white;
+}
+button.hire{
+    border: 2px solid #7cf03d;
+    color: #1f242d;
+    background-color: #7cf03d;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+button.hire:hover{
+    box-shadow: none;
+    border: 2px solid #7cf03d;
+    color: #7cf03d;
+}
+div.holder{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    margin-top: 190px;
+    margin-left: 200px;
+}
+div.holder img{
+    width: 500px;
+    height: 500px;
+}
+/* skill section */
+div.bord{
+    border: 2px solid black;
+    box-shadow: 0 0 30px black;
+    width: fit-content;
+    height: fit-content;
+}
+div.bord div.html{
+    border: 5px solid #7cf03d;
+    border-radius: 12px;
+    width: 280px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+    margin: 40px;
+}
+div.bord div.html:hover{
+    box-shadow: 0 0 20px #7cf03d;
+}
+div.html img {
+    margin: 20px;
+}
+div.html h2.heading{
+    background-color: black;
+    font-weight: 900;
+    font-size: 40px;
+     color: white;
+}
+h1.MY {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 130px;
+    font-family: Roboto;
+     color:white;
+}
+/* service section */
+img.ser{
+    width: 450px;
+    height: 270px;
+    border: 4px solid black;
+
+}
+/* project section */
+img.pr1{
+    width: 350px;
+    height: 450px;
+}
+div.pr h3{
+    font-size: 40px;
+}
+img.pr2{
+    width: 400px;
+    height: 300px;
+}
+/* contact page */
+label{
+    border: 2px solid #1f242d;
+    display: flex;
+    justify-content: center;
+}
+legend{
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: capitalize  ;
+}
+input.button{
+    padding-left: 40%;
+    padding-right: 40%;
+}
+footer{
+    background-color: lavender;
+}
+a.sci{
+    color: #7cf03d;
+}
