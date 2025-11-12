@@ -43,8 +43,9 @@
         height: 250px;
     }
 
-    
+
 }
+
 @media only screen and (max-width:1200px) {
     div.bord div.html {
         border: 5px solid #7cf03d;
@@ -68,5 +69,51 @@
         width: fit-content;
         height: fit-content;
         position: relative;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    div.main h1 {
+        font-size: 25px;
+    }
+
+    div.main h2 {
+        font-size: 20px;
+    }
+
+    div.main P {
+        font-size: 13px;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    button.hire {
+        border: 2px solid #7cf03d;
+        color: #1f242d;
+        background-color: #7cf03d;
+        box-shadow: 0 0 10px #7cf03d;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: sans-serif;
+
+    }
+
+    div.holder {
+        width: fit-content;
+        height: fit-content;
+        border-radius: 50%;
+        margin-top: 190px;
+        margin-left: 59px;
+
+    }
+}
+
+@media only screen and (max-width:559px) {
+    div.main h1 {
+        font-size: 30px;
+    }
+
+    div.main h2 {
+        font-size: 25px;
     }
 }
