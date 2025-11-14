@@ -116,19 +116,20 @@
     div.main h2 {
         font-size: 30px;
     }
-    div.bord div.html{
-    border: 5px solid #7cf03d;
-    border-radius: 12px;
-    width: 280px;
-    height: 300px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    padding: 30px;
-    margin: 40px 120px;
-}
+
+    div.bord div.html {
+        border: 5px solid #7cf03d;
+        border-radius: 12px;
+        width: 280px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        padding: 30px;
+        margin: 40px 120px;
+    }
 }
