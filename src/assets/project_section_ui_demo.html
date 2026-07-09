@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project UI Ideas Demo (Pure CSS)</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      padding: 40px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    /* Scroll */
+    .scroll-x {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .scroll-x::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .scroll-x::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 10px;
+    }
+
+    /* Glass */
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      width: 260px;
+      flex-shrink: 0;
+    }
+
+    .glass img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Overlay */
+    .card {
+      position: relative;
+      width: 260px;
+      overflow: hidden;
+      border-radius: 15px;
+      flex-shrink: 0;
+    }
+
+    .card img {
+      width: 100%;
+      transition: 0.4s;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: 0.4s;
+    }
+
+    .card:hover .overlay {
+      opacity: 1;
+    }
+
+    .btn {
+      margin-top: 10px;
+      padding: 8px 15px;
+      background: white;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Split */
+    .split {
+      display: flex;
+      width: 450px;
+      background: #1e293b;
+      border-radius: 15px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .split img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .split .content {
+      padding: 15px;
+    }
+
+    /* Tilt */
+    .tilt {
+      width: 260px;
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 15px;
+      transition: 0.3s;
+      flex-shrink: 0;
+    }
+
+    .tilt:hover {
+      transform: rotateX(5deg) rotateY(5deg);
+    }
+
+    .tilt img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Gradient */
+    .gradient {
+      width: 260px;
+      padding: 15px;
+      border-radius: 15px;
+      background: linear-gradient(135deg,#6366f1,#ec4899);
+      flex-shrink: 0;
+    }
+
+    .gradient img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    /* Featured */
+    .featured {
+      width: 350px;
+      background: #020617;
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid purple;
+      flex-shrink: 0;
+    }
+
+    .featured img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Project UI Ideas (Pure CSS)</h1>
+
+  <div class="scroll-x">
+
+    <!-- Glass -->
+    <div class="glass">
+      <img src="https://picsum.photos/300/200">
+      <h3>Glass Card</h3>
+      <p>Blur + transparent effect</p>
+    </div>
+
+    <!-- Overlay -->
+    <div class="card">
+      <img src="https://picsum.photos/300/200?2">
+      <div class="overlay">
+        <h3>Overlay Card</h3>
+        <button class="btn">View</button>
+      </div>
+    </div>
+
+    <!-- Split -->
+    <div class="split">
+      <img src="https://picsum.photos/200/200?3">
+      <div class="content">
+        <h3>Split Layout</h3>
+        <p>Image + content</p>
+      </div>
+    </div>
+
+    <!-- Tilt -->
+    <div class="tilt">
+      <img src="https://picsum.photos/300/200?4">
+      <h3>3D Tilt</h3>
+    </div>
+
+    <!-- Gradient -->
+    <div class="gradient">
+      <img src="https://picsum.photos/300/200?5">
+      <h3>Mockup Style</h3>
+    </div>
+
+    <!-- Featured -->
+    <div class="featured">
+      <img src="https://picsum.photos/400/250?6">
+      <h2>Featured Project ⭐</h2>
+      <p>Big highlight card</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

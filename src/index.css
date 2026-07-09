@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import 'animate.css';
+
+:root {
+  --black: #0b132b;
+  --green: #9ef01a;
+  --white: #f7fee7;
+}
+
+button.white:hover {
+  color: black;
+  border: 1px solid var(--black);
+}
+
+button.white::after {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+button.white {
+  background-color: var(--black);
+  border: 1px solid var(--black);
+  position: relative;
+}
+
+button.black {
+  background-color: black;
+}
+
+button.black:hover {
+  background-color: var(--black);
+}
+
+button.secondary {
+  background-color: white;
+  color: var(--black);
+}
+
+button.secondary:hover {
+  background-color: var(--black);
+  color: white;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: slide 20s linear infinite;
+}
