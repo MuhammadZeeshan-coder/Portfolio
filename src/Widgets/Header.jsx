@@ -1,45 +1,89 @@
-import React from 'react'
-import ButtonOne from '../Shared/ButtonOne'
-import zeeshan from '../assets/zeeshan.png'
-import NavbarList from '../Shared/NavbarList'
-import { ArrowDownToLine } from 'lucide-react'
+import React from "react";
+import ButtonOne from "../Shared/ButtonOne";
+import zeeshan from "../assets/zeeshan.png";
+import NavbarList from "../Shared/NavbarList";
+import { ArrowDownToLine } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className={`flex items-center justify-center gap-50 pt-0 -mt-5`} id='hero'>
-      <div className=''>
-        <h5 className='uppercase text-lg font-semibold text-(--black)' style={{ fontFamily: "poppins" }}>welcome to my profile</h5>
-        <h1 className='text-8xl font-bold uppercase text-(--black) mt-3' style={{ fontFamily: "roboto" }}>i'm muhammad <br /> zeeshan</h1>
-        <h3 className='text-5xl uppercase text-(--black) mt-5 font-semibold' style={{ fontFamily: "poppins" }}>Full stack Developer</h3>
-        <p className=' font-semibold text-(--black) text-md leading-6 my-5' style={{ fontFamily: "Inter" }}>
-          I work with a team of strategic working globally with largest <br />
-          brands, we believe that progress only you to play things safe.
+    <header
+      className="container mx-auto px-6 md:px-10 lg:px-20 py-10 lg:py-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16"
+      id="hero"
+    >
+      {/* Left Content */}
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <h5
+          className="uppercase text-sm md:text-base lg:text-lg font-semibold text-(--black)"
+          style={{ fontFamily: "Poppins" }}
+        >
+          Welcome to my profile
+        </h5>
+
+        <h1
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-6xl font-bold uppercase text-(--black) mt-3 leading-tight"
+          style={{ fontFamily: "Roboto" }}
+        >
+          I'm Muhammad
+          <br />
+          Zeeshan
+        </h1>
+
+        <h3
+          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl uppercase text-(--black) mt-5 font-semibold"
+          style={{ fontFamily: "Poppins" }}
+        >
+          Full Stack Developer
+        </h3>
+
+        <p
+          className="font-semibold text-(--black) text-sm md:text-base leading-7 mt-6 max-w-xl mx-auto lg:mx-0"
+          style={{ fontFamily: "Inter" }}
+        >
+          I work with a team of strategic professionals globally with leading
+          brands. We believe progress comes from creativity, innovation, and
+          building high-quality digital experiences that help businesses grow.
         </p>
-        <div className='mt-5 w-fit'>
-          <ButtonOne name={"Download CV"} color="black" icon={<ArrowDownToLine size={18}/>} />
+
+        {/* Button */}
+        <div className="mt-8 flex justify-center lg:justify-start">
+          <ButtonOne
+            name="Download CV"
+            color="black"
+            icon={<ArrowDownToLine size={18} />}
+          />
         </div>
-        <div className='w-fit flex items-center justify-center -mb-30 mt-10'>
-          <ul className='flex gap-5'>
-            <div className='flex items-center gap-1'>
-              <i class="fa-brands fa-square-facebook"></i>
-              <NavbarList name={"Facebook"} link="" />
-            </div>
-            <div className='flex items-center gap-1'>
-              <i class="fa-brands fa-square-twitter"></i>
-              <NavbarList name={"Twitter"} link="" />
-            </div>
-            <div className='flex items-center gap-1'>
-              <i class="fa-brands fa-square-linkedin"></i>
-              <NavbarList name={"LinkedIn"} link="" />
-            </div>
+
+        {/* Social Links */}
+        <div className="mt-10 flex justify-center lg:justify-start">
+          <ul className="flex flex-wrap items-center gap-6">
+            <li className="flex items-center gap-2">
+              <i className="fa-brands fa-square-facebook text-xl"></i>
+              <NavbarList name="Facebook" link="" />
+            </li>
+
+            <li className="flex items-center gap-2">
+              <i className="fa-brands fa-square-twitter text-xl"></i>
+              <NavbarList name="Twitter" link="" />
+            </li>
+
+            <li className="flex items-center gap-2">
+              <i className="fa-brands fa-linkedin text-xl"></i>
+              <NavbarList name="LinkedIn" link="" />
+            </li>
           </ul>
         </div>
       </div>
-      <div className=''>
-        <img src={zeeshan} alt="" className=' lg:w-120 h-165' />
+
+      {/* Right Image */}
+      <div className="w-full lg:w-1/2 flex justify-center">
+        <img
+          src={zeeshan}
+          alt="Muhammad Zeeshan"
+          className="w-72 sm:w-80 md:w-[420px] h-auto object-contain"
+        />
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
