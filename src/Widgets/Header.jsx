@@ -79,7 +79,7 @@ const Header = () => {
         <img
           src={zeeshan}
           alt="Muhammad Zeeshan"
-          className="w-72 sm:w-80 md:w-[420px] h-auto object-contain"
+          className="w-72 sm:w-80 md:w-105 h-auto object-contain"
         />
       </div>
     </header>

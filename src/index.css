@@ -7,14 +7,9 @@
 }
 
 button.white:hover {
-  color: black;
-  border: 1px solid var(--black);
-}
-
-button.white::after {
   width: 100%;
   background-color: white;
-  position: absolute;
+  color: var(--black);
 }
 
 button.white {
@@ -28,15 +23,6 @@ button.black {
 }
 
 button.black:hover {
-  background-color: var(--black);
-}
-
-button.secondary {
-  background-color: white;
-  color: var(--black);
-}
-
-button.secondary:hover {
   background-color: var(--black);
   color: white;
 }
