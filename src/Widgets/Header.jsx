@@ -2,12 +2,12 @@ import React from "react";
 import ButtonOne from "../Shared/ButtonOne";
 import zeeshan from "../assets/zeeshan.png";
 import NavbarList from "../Shared/NavbarList";
-import { ArrowDownToLine } from "lucide-react";
+import { ArrowDownToLine , BriefcaseBusiness } from "lucide-react";
 
 const Header = () => {
   return (
     <header
-      className="container mx-auto px-6 md:px-10 lg:px-20 py-10 lg:py-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16"
+      className="container mx-auto px-6 md:px-10 lg:px-20 py-10 lg:py-0 min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center gap-30"
       id="hero"
     >
       {/* Left Content */}
@@ -44,38 +44,46 @@ const Header = () => {
           building high-quality digital experiences that help businesses grow.
         </p>
 
-        {/* Button */}
-        <div className="mt-8 flex justify-center lg:justify-start">
+        {/* CTA Section */}
+        <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4">
+
           <ButtonOne
             name="Download CV"
             color="black"
             icon={<ArrowDownToLine size={18} />}
           />
+
+          <ButtonOne
+            name="Hire Me"
+            color="secondary"
+            icon={<BriefcaseBusiness size={18} />}
+          />
+
         </div>
 
-        {/* Social Links */}
-        <div className="mt-10 flex justify-center lg:justify-start">
-          <ul className="flex flex-wrap items-center gap-6">
-            <li className="flex items-center gap-2">
-              <i className="fa-brands fa-square-facebook text-xl"></i>
-              <NavbarList name="Facebook" link="" />
-            </li>
+        {/* Quick Highlights */}
+        <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-6">
 
-            <li className="flex items-center gap-2">
-              <i className="fa-brands fa-square-twitter text-xl"></i>
-              <NavbarList name="Twitter" link="" />
-            </li>
+          <div>
+            <h3 className="text-2xl font-bold text-black">20+</h3>
+            <p className="text-sm text-gray-600">Projects Completed</p>
+          </div>
 
-            <li className="flex items-center gap-2">
-              <i className="fa-brands fa-linkedin text-xl"></i>
-              <NavbarList name="LinkedIn" link="" />
-            </li>
-          </ul>
+          <div>
+            <h3 className="text-2xl font-bold text-black">6+</h3>
+            <p className="text-sm text-gray-600">Months Experience</p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-black">100%</h3>
+            <p className="text-sm text-gray-600">Client Satisfaction</p>
+          </div>
+
         </div>
       </div>
 
       {/* Right Image */}
-      <div className="w-full lg:w-1/2 flex justify-center">
+      <div className="w-full lg:w-fit flex justify-center">
         <img
           src={zeeshan}
           alt="Muhammad Zeeshan"

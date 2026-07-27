@@ -73,7 +73,7 @@ const Service = () => {
             <div className="mx-auto max-w-7xl">
 
                 {/* Header */}
-                <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+                <div className="flex flex-col md:flex-row items-center justify-between mb-12">
                     <SemiHeading
                         h5="services"
                         h2="what i offer"
@@ -81,7 +81,7 @@ const Service = () => {
 
                     <ButtonOne
                         name="hire me"
-                        color="white text-sm"
+                        color="white text-sm mt-5 md:mt-0"
                         icon={<ArrowUpRight size={18} />}
                     />
                 </div>

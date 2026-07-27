@@ -1,94 +1,108 @@
-import React from 'react'
-import SemiHeading from '../Shared/SemiHeading'
+import React from "react";
+import SemiHeading from "../Shared/SemiHeading";
 import {
-    ArrowUpRight,
-    UserRound,
-    BriefcaseBusiness,
-    MapPin,
-} from 'lucide-react'
-import ButtonOne from '../Shared/ButtonOne'
-import AboutCards from '../Shared/AboutCards'
+  ArrowUpRight,
+  UserRound,
+  BriefcaseBusiness,
+  FolderOpen,
+  Users,
+  MapPin,
+} from "lucide-react";
+import ButtonOne from "../Shared/ButtonOne";
+import AboutCards from "../Shared/AboutCards";
 
 const About = () => {
-    const info = [
-        {
-            icon: <BriefcaseBusiness size={40} />,
-            h5: 'experience',
-            h3: '6+ Months',
-            p: 'of working experience',
-        },
-        {
-            icon: <BriefcaseBusiness size={40} />,
-            h5: 'projects',
-            h3: '15+',
-            p: 'completed projects',
-        },
-    ]
+  const info = [
+    {
+      icon: <BriefcaseBusiness size={28} />,
+      h5: "Experience",
+      h3: "6+ Months",
+      p: "of working experience",
+    },
+    {
+      icon: <FolderOpen size={28} />,
+      h5: "Projects",
+      h3: "15+",
+      p: "completed projects",
+    },
+    {
+      icon: <Users size={28} />,
+      h5: "Clients",
+      h3: "10+",
+      p: "happy clients worldwide",
+    },
+    {
+      icon: <MapPin size={28} />,
+      h5: "Location",
+      h3: "Pakistan",
+      p: "available for work",
+    },
+  ];
 
-    const information = [
-        {
-            icon: <UserRound size={40} />,
-            h5: 'clients',
-            h3: '10+',
-            p: 'happy clients worldwide',
-        },
-        {
-            icon: <MapPin size={40} />,
-            h5: 'location',
-            h3: 'Pakistan',
-            p: 'available for work',
-        },
-    ]
+  return (
+    <section
+      id="about"
+      className="w-full py-16 sm:py-20 lg:py-24 px-5 sm:px-8 lg:px-12 xl:px-16 bg-[var(--white)] text-[var(--black)]"
+    >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 xl:gap-20 items-center">
 
-    return (
-        <section
-            className="w-full px-5 py-15 sm:px-8 lg:px-12 xl:px-20 bg-(--white) text-(--black)"
-            id="about"
-        >
-            <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-12 lg:flex-row lg:gap-20">
+        {/* Left Side */}
+        <div className="flex flex-col sm:flex-row items-center sm:items-start gap-8">
 
-                {/* About Content */}
-                <div className="flex w-full flex-col items-center gap-8 sm:flex-row lg:max-w-2xl lg:items-start">
+          {/* Profile Icon */}
+          <div className="flex shrink-0 items-center justify-center w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full bg-white shadow-xl">
+            <UserRound
+              className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20"
+              strokeWidth={1}
+            />
+          </div>
 
-                    {/* Profile Icon */}
-                    <div className="flex size-28 shrink-0 items-center justify-center rounded-full bg-white shadow-xl sm:size-32">
-                        <UserRound
-                            className="size-20 sm:size-24"
-                            strokeWidth={1}
-                        />
-                    </div>
+          {/* About Content */}
+          <div className="text-center sm:text-left">
 
-                    {/* Text Content */}
-                    <div className="max-w-xl text-center sm:text-left">
-                        <SemiHeading
-                            h5="About Me"
-                            h2="who i am"
-                        />
+            <SemiHeading
+              h5="About Me"
+              h2="Who I Am"
+            />
 
-                        <p className="mt-2 mb-5 text-sm font-semibold leading-7 sm:text-base">
-                            I'm a passionate Full Stack Developer who loves
-                            building beautiful, functional and user-centered
-                            web applications. I enjoy turning complex
-                            problems into simple, elegant solutions.
-                        </p>
+            <p className="mt-5 text-sm sm:text-base leading-7 font-medium max-w-xl">
+              I'm a passionate Full Stack Developer who loves building
+              beautiful, functional, and user-centered web applications.
+              I enjoy turning complex problems into simple, elegant
+              solutions while creating fast and responsive digital
+              experiences.
+            </p>
 
-                        <ButtonOne
-                            name="Read More"
-                            icon={<ArrowUpRight size={18} />}
-                            color="black text-sm mx-auto sm:mx-0"
-                        />
-                    </div>
-                </div>
-
-                {/* Stats Cards */}
-                <div className="flex w-full max-w-xl flex-col gap-5">
-                    <AboutCards data={info} />
-                    <AboutCards data={information} />
-                </div>
-
+            <div className="mt-8 flex justify-center sm:justify-start">
+              <ButtonOne
+                name="Read More"
+                icon={<ArrowUpRight size={18} />}
+                color="black"
+              />
             </div>
-        </section>
-    )
-}
 
-export default About
+          </div>
+
+        </div>
+
+        {/* Right Side Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+          {info.map((item, index) => (
+            <AboutCards
+              key={index}
+              icon={item.icon}
+              h5={item.h5}
+              h3={item.h3}
+              p={item.p}
+            />
+          ))}
+
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default About;

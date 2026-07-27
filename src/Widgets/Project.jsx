@@ -15,13 +15,13 @@ const Project = () => {
     <section className="py-16 bg-(--white)" id="project">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         {/* Heading */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between px-10">
           <SemiHeading h2="featured projects" h5="projects" />
 
           <ButtonOne
             name="View All Projects"
             icon={<ArrowUpRight size={18} />}
-            color="white text-sm"
+            color="white text-sm mt-5 md:mt-0"
           />
         </div>
 
