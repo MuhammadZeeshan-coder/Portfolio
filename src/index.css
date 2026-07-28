@@ -54,3 +54,16 @@ button.secondary:hover {
   width: max-content;
   animation: slide 20s linear infinite;
 }
+
+
+/* Navbar */
+
+@media (min-width : 1536px) {
+  .navbar {
+    gap: 185px;
+  }
+
+  #hero {
+    padding: 0px 160px;
+  }
+}

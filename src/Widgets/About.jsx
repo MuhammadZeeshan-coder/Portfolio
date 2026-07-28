@@ -65,7 +65,7 @@ const About = () => {
               h2="Who I Am"
             />
 
-            <p className="mt-5 text-sm sm:text-base leading-7 font-medium max-w-xl">
+            <p className="mt-5 text-sm sm:text-base leading-7 line-clamp-none lg:line-clamp-3 font-medium max-w-xl">
               I'm a passionate Full Stack Developer who loves building
               beautiful, functional, and user-centered web applications.
               I enjoy turning complex problems into simple, elegant

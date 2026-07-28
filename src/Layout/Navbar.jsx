@@ -24,11 +24,11 @@ const Navbar = () => {
       {/* Navbar */}
       <div
         className={`max-w-7xl mx-auto transition-all duration-300 rounded-full
-        flex items-center lg:justify-center lg:gap-35 justify-between gap-0
+        flex items-center justify-between gap-0 navbar container px-6
         ${
           scrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-lg py-3 px-6 mt-3"
-            : "bg-transparent py-5 px-2"
+            ? "bg-white/80 backdrop-blur-xl shadow-lg py-3 mt-3"
+            : "bg-transparent py-5"
         }`}
       >
         {/* Logo */}
