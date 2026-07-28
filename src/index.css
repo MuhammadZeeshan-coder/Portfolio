@@ -28,7 +28,7 @@ button.black:hover {
 }
 
 button.secondary {
-  background-color: var(--white);
+  background-color: transparent;
   color: var(--black);
   border: 1px solid var(--black);
 }
@@ -38,6 +38,29 @@ button.secondary:hover {
   color: var(--white);
   border: 1px solid var(--black);
 }
+
+button.card-one {
+  background-color: white;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+button.card-one:hover {
+  opacity: 90%;
+}
+
+button.card-two:hover {
+  background-color: white;
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+button.card-two {
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
 
 @keyframes slide {
   0% {

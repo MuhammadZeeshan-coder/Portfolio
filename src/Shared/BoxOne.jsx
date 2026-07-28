@@ -3,7 +3,7 @@ import React from 'react'
 
 const BoxOne = (Props) => {
     return (
-        <div className='border-2 rounded-md border-gray-300 w-full h-72 p-4 duration-300 delay-75 hover:scale-103 hover:border-(--green)'>
+        <div className='border-2 rounded-md border-gray-300 w-full h-79 lg:79 md:70 xl:h-72 p-4 duration-300 delay-75 hover:scale-103 hover:border-(--green)'>
             <div className='border border-gray-300 size-12 flex justify-center items-center rounded-md bg-(--green) text-white'>
                 {Props.icon}
             </div>

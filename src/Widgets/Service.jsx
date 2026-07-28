@@ -67,7 +67,7 @@ const Service = () => {
 
     return (
         <section
-            className="border-y border-[#e5e7eb] px-5 py-15 sm:px-8 lg:px-12 xl:px-20"
+            className="border-y border-[#e5e7eb] px-6 lg:px-15 py-16"
             id="services"
         >
             <div className="mx-auto max-w-7xl">
@@ -87,7 +87,6 @@ const Service = () => {
                 </div>
 
                 {/* Services Grid */}
-                <div className="flex justify-center ">
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
                         {info.map((item) => (
                             <BoxOne
@@ -99,7 +98,6 @@ const Service = () => {
                             />
                         ))}
                     </div>
-                </div>
 
             </div>
         </section>
