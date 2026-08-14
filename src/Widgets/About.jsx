@@ -60,10 +60,12 @@ const About = () => {
           {/* About Content */}
           <div className="text-center sm:text-left">
 
-            <SemiHeading
-              h5="About Me"
-              h2="Who I Am"
-            />
+            <div className="flex justify-center sm:block">
+              <SemiHeading
+                h5="About Me"
+                h2="Who I Am"
+              />
+            </div>
 
             <p className="mt-5 text-sm sm:text-base leading-7 line-clamp-none lg:line-clamp-3 font-medium max-w-xl">
               I'm a passionate Full Stack Developer who loves building

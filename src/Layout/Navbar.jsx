@@ -53,6 +53,7 @@ const Navbar = () => {
         {/* Desktop Button */}
         <div className="hidden lg:block">
           <ButtonOne
+            link="#contact"
             name="Hire Me"
             icon={<MoveUpRight size={20} />}
             color="white"

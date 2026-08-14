@@ -2,7 +2,7 @@
 import SkillCard from "../Shared/SkillCard";
 
 const Skill = ({ skills }) => {
-  const loopSkills = [...skills, ...skills]; // 🔥 spread operator
+  const loopSkills = [...skills, ...skills, ...skills]; // 🔥 spread operator
 
   return (
     <div className="w-full overflow-hidden bg-transparent py-12">

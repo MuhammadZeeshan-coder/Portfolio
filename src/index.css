@@ -43,6 +43,7 @@ button.card-one {
   background-color: white;
   color: var(--black);
   border: 1px solid var(--black);
+  text-transform: capitalize;
 }
 
 button.card-one:hover {
@@ -59,6 +60,7 @@ button.card-two {
   background-color: transparent;
   color: var(--white);
   border: 1px solid var(--white);
+  text-transform: capitalize;
 }
 
 

@@ -54,6 +54,7 @@ const Header = () => {
           />
 
           <ButtonOne
+            link="#contact"
             name="Hire Me"
             color="secondary"
             icon={<BriefcaseBusiness size={18} />}

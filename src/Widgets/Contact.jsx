@@ -5,8 +5,8 @@ import BoxTwo from '../Shared/BoxTwo'
 
 const Contact = () => {
     return (
-        <section className="py-12 md:py-20">
-            <div className="container mx-auto px-25">
+        <section className="py-12 md:py-20" id="contact">
+            <div className="container mx-auto xl:px-25 lg:px-15 px-6">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 

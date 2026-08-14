@@ -13,8 +13,8 @@ const data = [
     return (
        <section id='tech-stack' className='py-15 scroll-smooth border-y border-[#e5e7eb]'>
           <div className='text-center'>
-            <h5 className='uppercase text-sm font-bold mb-1 text-(--green)'>tech stack</h5>
-             <h2 className='capitalize font-semibold text-4xl leading-tight text-(--black)' style={{ fontFamily: "poppins" }}>
+            <h5 className='uppercase text-xs sm:textsm font-bold mb-1 text-(--green)'>tech stack</h5>
+             <h2 className='capitalize font-semibold sm:text-4xl text-2xl leading-tight text-(--black)' style={{ fontFamily: "poppins" }}>
                technologies i work with
              </h2>
           </div>
