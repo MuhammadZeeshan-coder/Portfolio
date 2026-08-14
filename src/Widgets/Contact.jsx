@@ -1,9 +1,69 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SemiHeading from '../Shared/SemiHeading'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
 import BoxTwo from '../Shared/BoxTwo'
 
 const Contact = () => {
+
+    const [formData, setFormData] = useState({
+        name: '',
+        company: '',
+        email: '',
+        message: ''
+    })
+
+    const handleChange = (e) => {
+        const { id, value } = e.target
+
+        setFormData((prev) => ({
+            ...prev,
+            [id]: value
+        }))
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const { name, company, email, message } = formData
+
+        // Your WhatsApp number
+        const phoneNumber = '923103696838'
+
+        // WhatsApp message
+        const whatsappMessage = `
+Hello Muhammad Zeeshan,
+
+I found your portfolio and would like to discuss a project with you.
+
+*Client Details:*
+
+Name: ${name}
+Company: ${company || 'Not provided'}
+Email: ${email}
+
+*Project Message:*
+${message}
+
+Looking forward to hearing from you.
+        `.trim()
+
+        // Encode message for URL
+        const encodedMessage = encodeURIComponent(whatsappMessage)
+
+        // Open WhatsApp
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`
+
+        window.open(whatsappURL, '_blank')
+
+        // Optional: Reset form after submission
+        setFormData({
+            name: '',
+            company: '',
+            email: '',
+            message: ''
+        })
+    }
+
     return (
         <section className="py-12 md:py-20" id="contact">
             <div className="container mx-auto xl:px-25 lg:px-15 px-6">
@@ -12,7 +72,10 @@ const Contact = () => {
 
                     {/* Contact Information */}
                     <div>
-                        <SemiHeading h5="Contact" h2="let's work together !" />
+                        <SemiHeading
+                            h5="Contact"
+                            h2="let's work together !"
+                        />
 
                         <p
                             className="mt-3 text-sm sm:text-base"
@@ -49,7 +112,10 @@ const Contact = () => {
                     {/* Contact Form */}
                     <div className="w-full">
 
-                        <form className="text-black p-4 sm:p-6 rounded-lg space-y-4 w-full">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="text-black p-4 sm:p-6 rounded-lg space-y-4 w-full"
+                        >
 
                             {/* Name + Company */}
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -58,7 +124,10 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         id="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         placeholder="Your Name"
+                                        required
                                         className="w-full rounded-lg p-3 bg-white border border-(--green) focus:outline-none"
                                     />
                                 </div>
@@ -67,6 +136,8 @@ const Contact = () => {
                                     <input
                                         type="text"
                                         id="company"
+                                        value={formData.company}
+                                        onChange={handleChange}
                                         placeholder="Your Company Name"
                                         className="w-full rounded-lg p-3 bg-white border border-(--green) focus:outline-none"
                                     />
@@ -80,7 +151,10 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
                                     placeholder="Your Email"
+                                    required
                                     className="w-full p-3 rounded-lg bg-white border border-(--green) focus:outline-none"
                                 />
                             </div>
@@ -90,8 +164,11 @@ const Contact = () => {
                             <div>
                                 <textarea
                                     id="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
                                     placeholder="Message"
                                     rows="5"
+                                    required
                                     className="w-full p-3 rounded-lg bg-white border border-(--green) focus:outline-none resize-none"
                                 ></textarea>
                             </div>
