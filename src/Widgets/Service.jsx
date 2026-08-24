@@ -1,12 +1,12 @@
 import React from 'react'
 import {
     ArrowUpRight,
-    Cloud,
-    Database,
+    Atom,
+    MonitorSmartphone,
     Layout,
-    Search,
+    Layers,
     Server,
-    Smartphone,
+    PlugZap,
 } from 'lucide-react'
 
 import SemiHeading from '../Shared/SemiHeading'
@@ -33,35 +33,35 @@ const Service = () => {
         },
         {
             key: 3,
-            icon: <Database size={30} />,
-            title: 'Database Architecture',
+            icon: <MonitorSmartphone size={30} />,
+            title: 'Responsive Web Design',
             description:
-                'Optimizing data structures and queries for PostgreSQL, MongoDB, and Redis implementations.',
-            value: '99.9% uptime with optimized query performance',
+                'Make websites work smoothly across mobile, tablet, laptop, and desktop devices.',
+            value: 'Fast & Responsive',
         },
         {
             key: 4,
-            icon: <Smartphone size={30} />,
+            icon: <PlugZap size={30} />,
             title: 'API Integration',
             description:
-                'Seamless third-party integrations including payment gateways, social APIs, and cloud services.',
-            value: 'Secure, documented REST & GraphQL endpoints',
+                'Connect frontend applications with REST APIs and display dynamic data efficiently.',
+            value: 'Seamless Integration',
         },
         {
             key: 5,
-            icon: <Cloud size={30} />,
-            title: 'DevOps & Cloud',
+            icon: <Atom size={30} />,
+            title: 'React Development',
             description:
-                'Docker containerization, CI/CD pipelines, and AWS/GCP deployment strategies.',
-            value: 'Automated deployments with zero-downtime updates',
+                'Create scalable and interactive web applications using React and reusable components.',
+            value: 'Component-Based Architecture',
         },
         {
             key: 6,
-            icon: <Search size={30} />,
-            title: 'Performance Optimization',
+            icon: <Layers size={30} />,
+            title: 'Next.js Development',
             description:
-                'Core Web Vitals optimization, lazy loading, and caching strategies for maximum speed.',
-            value: 'Sub-100ms initial load times guaranteed',
+                'Develop high-performance websites and applications with Next.js, routing, SEO, and server-side features.',
+            value: 'High Performance',
         },
     ]
 

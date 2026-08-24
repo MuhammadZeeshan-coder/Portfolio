@@ -13,6 +13,18 @@ import { ArrowUpRight } from "lucide-react";
 const Project = () => {
   const Info = [
     {
+      link: "https://headphone-sooty.vercel.app/",
+      image: p5,
+      title: "Headphone Website",
+      description: "Modern fashion e-commerce platform focused on style, simplicity, and user experience."
+    },
+    {
+      link: "https://maintain-iq-dun.vercel.app/",
+      image: p6,
+      title: "Maintain IQ",
+      description: "A asset manage website that helps you track and manage your assets efficiently."
+    },
+    {
       link: "https://techno-kids.netlify.app/",
       image: p1,
       title: "TechnoKids",
@@ -35,18 +47,6 @@ const Project = () => {
       image: p4,
       title: "HelpHub AI",
       description: "HelpHub AI connects people through a smart, community-driven support system powered by AI."
-    },
-    {
-      link: "https://headphone-sooty.vercel.app/",
-      image: p5,
-      title: "Headphone Website",
-      description: "Modern fashion e-commerce platform focused on style, simplicity, and user experience."
-    },
-    {
-      link: "https://maintain-iq-dun.vercel.app/",
-      image: p6,
-      title: "Maintain IQ",
-      description: "A asset manage website that helps you track and manage your assets efficiently."
     }
   ]
   return (
