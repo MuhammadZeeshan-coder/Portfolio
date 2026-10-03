@@ -66,12 +66,12 @@ Looking forward to hearing from you.
 
     return (
         <section className="py-12 md:py-20" id="contact">
-            <div className="container mx-auto xl:px-25 lg:px-15 px-6">
+            <div className="container mx-auto xl:px-25 lg:px-15 px-0">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
                     {/* Contact Information */}
-                    <div>
+                    <div className="mx-4 lg:mx-0">
                         <SemiHeading
                             h5="Contact"
                             h2="let's work together !"

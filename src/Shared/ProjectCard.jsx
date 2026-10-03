@@ -32,11 +32,8 @@ const ProjectCard = ({
           h-90
           overflow-hidden
           rounded-[18px]
-          transition-all
-          duration-500
-          
-        ">
-
+        "
+      >
         {/* IMAGE */}
         <img
           src={image}
@@ -45,7 +42,7 @@ const ProjectCard = ({
             absolute
             left-0
             top-0
-            h-62.5
+            h-fit
             w-full
             object-cover
             object-top
@@ -67,6 +64,7 @@ const ProjectCard = ({
             transition-all
             duration-500
             group-hover:bg-black/65
+            max-md:bg-black/65
           "
         />
 
@@ -79,13 +77,16 @@ const ProjectCard = ({
             flex-col
             justify-end
             p-6
+
             opacity-0
             transition-all
             duration-500
+
             group-hover:opacity-100
+
+            max-md:opacity-100
           "
         >
-
           <h3 className="text-2xl font-semibold text-white">
             {title}
           </h3>
@@ -97,12 +98,19 @@ const ProjectCard = ({
           </p>
 
           <div className="mt-5 flex gap-3">
+            <ButtonOne
+              name="Live Demo"
+              link={link}
+              color="card-one"
+              target="_blank"
+            />
 
-            <ButtonOne name="Live Demo" link={link} color="card-one" target="_blank" />
-            <ButtonOne name="Github" link={githubLink} color="card-two" />
-
+            <ButtonOne
+              name="Github"
+              link={githubLink}
+              color="card-two"
+            />
           </div>
-
         </div>
 
         {/* NORMAL CONTENT */}
@@ -116,10 +124,12 @@ const ProjectCard = ({
             p-5
             transition-all
             duration-500
+
             group-hover:translate-y-full
+
+            max-md:translate-y-full
           "
         >
-
           <h3 className="text-lg font-semibold text-gray-900">
             {title}
           </h3>
@@ -129,9 +139,7 @@ const ProjectCard = ({
           <p className="mt-2 text-sm leading-6 text-gray-500">
             {description}
           </p>
-
         </div>
-
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 const SkillCard = (item) => {
     return (
         <div
-            className="w-fit bg-white border border-gray-300 rounded-2xl p-5 shadow-lg flex justify-center items-center gap-1"
+            className="w-fit bg-transparent border border-gray-300 rounded-2xl px-3 py-1 flex justify-center items-center gap-1"
         >
             <div className={`w-fit h-fit flex justify-center text-2xl rounded-lg`}>
                 {item.image}
